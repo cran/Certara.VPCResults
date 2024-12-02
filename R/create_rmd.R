@@ -1,9 +1,13 @@
 create_rmdFile <- function(directory) {
   if (missing(directory)) {
-    stop("Missing \"directory\" argument.")
+    directory <- normalizePath(".")
   }
 
   directory <- gsub("\\", "/", directory, fixed = TRUE)
+
+  if (!dir.exists(directory)) {
+    stop("Cannot use ", directory, ", please ensure the path exists.")
+  }
 
   rmdFile <- file.path(directory, "report_template.Rmd")
   file.create(rmdFile)

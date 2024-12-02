@@ -1,6 +1,6 @@
 Package: Certara.VPCResults
 Title: Generate Visual Predictive Checks (VPC) Using 'shiny'
-Version: 3.0.1
+Version: 3.0.2
 Authors@R: c(
       person("James", "Craig", email = "james.craig@certara.com", role = c("aut", "cre")),
       person("Mike", "Talley", email = "mike.talley@certara.com", role = c("aut")),
@@ -22,10 +22,10 @@ Imports: shinyAce, shinymeta, bslib (>= 0.7.0), colourpicker,
         sortable, tidyvpc, htmltools, rlang, scales
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2024-10-07 13:51:07 UTC; jcraig
+Packaged: 2024-12-02 15:15:54 UTC; jcraig
 Author: James Craig [aut, cre],
   Mike Talley [aut],
   Certara USA, Inc [cph, fnd]
 Maintainer: James Craig <james.craig@certara.com>
 Repository: CRAN
-Date/Publication: 2024-10-10 18:50:06 UTC
+Date/Publication: 2024-12-02 15:30:02 UTC
